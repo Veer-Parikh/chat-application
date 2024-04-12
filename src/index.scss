@@ -1,6 +1,22 @@
 body{
   margin:0
 }
+@mixin mobile{
+  @media screen and (max-width:480px) {
+    @content
+  }
+};
+@mixin laptop{
+  @media screen and (max-width:1200px) {
+    @content
+  }
+};
+@mixin tablet{
+  @media screen and (max-width:768px) {
+    @content
+  }
+}
+
 .formContainer{
   background-color: #393E46;
   height:100vh;
@@ -170,7 +186,7 @@ body{
           button{
             border:none;
             background-color: #393E46;
-            padding:10px 20px;
+            padding:10px 15px;
             border-radius: 6px;
             font-size: 15px;
             color:#ffffff;

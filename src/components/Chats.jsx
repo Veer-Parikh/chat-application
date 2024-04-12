@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import icon3 from "../img/icon3.jpg"
 const Chats = () => {
+
+  const [chats,setChats] = useState([])
+  useEffect(() => {
+    
+  })
   return (
     <div className='chats'>
       <div className="userChat">
